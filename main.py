@@ -1,4 +1,3 @@
-from keep_alive import keep_alive
 import discord
 import os
 import json
@@ -188,7 +187,6 @@ async def on_message(message):
     except Exception as e:
         await message.channel.send(f"💥 My engine coughed up a lug nut! `{str(e)}`")
         
-keep_alive()
 bot.run(TOKEN)
 
 
